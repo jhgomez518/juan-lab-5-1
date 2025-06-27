@@ -48,7 +48,7 @@ addItemButton.addEventListener('click', (event) => {
     }
 
     if(!valid_entry) {
-        alert("not a valid entry. please select an item from the menu (check for extra spacing)")
+        alert("not a valid entry. please select an item from the menu (check for unnecessary spacing")
     }
 
     valid_entry = false
@@ -57,10 +57,10 @@ addItemButton.addEventListener('click', (event) => {
 
 // for removing a specific item from the cart
 cartItems.addEventListener('click', (event) => {
-    
+
     const row = event.target.closest('tr')
-    const item_name = row.children[0].textContent // first cell in row to be deleted
-    const item_price = cart[item_name] // should correspond with second cell in row to be deleted
+    const item_name = row.children[0].textContent // retrieves data of first cell in row to be deleted
+    const item_price = cart[item_name] // retrieves data of second cell in row to be deleted
 
     row.remove();
 
