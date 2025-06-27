@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-flex is-flex-direction-column">
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item is-size-4"> café co. </a>
+          <!-- creates a burger for mobile -->
+          <span class="navbar-burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item"> home </a>
+            <a class="navbar-item"> store </a>
+            <a class="navbar-item"> shopping cart </a>
+            <a class="navbar-item"> profile </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="hero is-warning is-fullheight is-flex-grow-1"
+      id="page-header"
+    >
+      <div
+        class="hero-body is-flex is-flex-direction-column is-align-items-center"
+      >
+        <section class="container is-large has-text-centered">
+          <h1 class="title">menu</h1>
+          <div
+            class="fixed-grid is-flex is-justify-content-center has-1-cols has-text-right"
+          >
+            <div class="grid">
+              <div class="cell">
+                espresso . . . . . . . . . . . . . . . . . $ 5 . 0 0
+              </div>
+              <div class="cell">
+                latte . . . . . . . . . . . . . . . . . $ 6 . 0 0
+              </div>
+              <div class="cell">
+                americano . . . . . . . . . . . . . . . . . $ 5 . 1 0
+              </div>
+              <div class="cell">
+                cappucino . . . . . . . . . . . . . . . . . $ 6 . 1 0
+              </div>
+              <div class="cell">
+                mocha . . . . . . . . . . . . . . . . . $ 6 . 30
+              </div>
+              <div class="cell">
+                tea . . . . . . . . . . . . . . . . . $ 5 . 0 0
+              </div>
+              <div class="cell">
+                drip . . . . . . . . . . . . . . . . . $ 4 . 9 0
+              </div>
+              <div class="cell">
+                pastry . . . . . . . . . . . . . . . . . $ 3 . 8 0
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <h1 class="title">cart</h1>
+          <div class="columns">
+            <form>
+              <div class="column is-one-half">
+                <div class="control">
+                  <input
+                    class="input is-warning"
+                    id="user-input"
+                    type="text"
+                    placeholder="..."
+                    minlength="5"
+                    required
+                  />
+                </div>
+                <div class="buttons pt-2">
+                  <button class="button is-info" id="add-item-button">
+                    add to cart
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="columns">
+            <div class="column is-one-third">
+              <table
+                class="table is-hoverable is-fullwidth has-background-warning"
+              >
+                <thead>
+                  <tr>
+                    <th>item</th>
+                    <th>price</th>
+                  </tr>
+                </thead>
+                <tbody id="cart-items"></tbody>
+              </table>
+              <h2 id="total-cost">total: $</h2>
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <div class="buttons pt-2">
+            <button class="button is-danger" id="add-item-button">
+              checkout
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="columns has-text-centered">
+        <div class="column"><a>instagram</a></div>
+        <div class="column">&copy; 2025</div>
+        <div class="column"><a>contact</a></div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

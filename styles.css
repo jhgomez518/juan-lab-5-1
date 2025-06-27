@@ -1,0 +1,6 @@
+
+body {
+    min-height: 100vh; /* ensures the body takes at least the full viewport height */
+}
+
+
